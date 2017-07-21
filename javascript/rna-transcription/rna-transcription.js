@@ -4,8 +4,8 @@ var DnaTranscriber = function() {
     C: "G",
     T: "A",
     A: "U"
-  }
-}
+  };
+};
 
 DnaTranscriber.prototype.toRna = function(dna) {
     var rna = "";
@@ -17,6 +17,6 @@ DnaTranscriber.prototype.toRna = function(dna) {
       }
     }
     return rna;
-}
+};
 
 module.exports = DnaTranscriber;

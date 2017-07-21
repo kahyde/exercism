@@ -1,6 +1,6 @@
 var Bob = function(){
     this.letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-}
+};
 
 Bob.prototype.hey = function(str){
 
@@ -10,8 +10,8 @@ Bob.prototype.hey = function(str){
   }
 
   var containsLetters = false;
-  for (var x = 0; x < str.length; x++) {
-    if (this.letters.indexOf(str.charAt(x)) > -1) {
+  for (var i = 0; i < str.length; i++) {
+    if (this.letters.indexOf(str.charAt(i)) > -1) {
       containsLetters = true;
     }
   }
@@ -19,7 +19,7 @@ Bob.prototype.hey = function(str){
   var caps = false;
   if (containsLetters) {
     caps = true;
-    for (var x = 0; x < str.length; x++) {
+    for (var j = 0; j < str.length; j++) {
       if ((this.letters.indexOf(str.charAt(x)) > -1) && (str.charAt(x) === str.charAt(x).toLowerCase())){
         caps = false;
       }
@@ -41,6 +41,6 @@ Bob.prototype.hey = function(str){
   } else {
       return 'Whatever.';
   }
-}
+};
 
 module.exports = Bob;
