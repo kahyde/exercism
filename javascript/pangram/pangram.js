@@ -5,7 +5,7 @@ var Pangram = function(sentence){
 }
 
 Pangram.prototype.isPangram = function() {
-  if (this.ascii.length === 0){
+  if (this.ascii.length < 26){
     return false;
   }
   for (var i = 97; i < 123; i++) {
